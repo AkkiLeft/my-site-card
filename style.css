@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  background: white;
+  color: black;
+}
+
+/* ---  NAVIGATION PART --- */
+
+.navigation{
+  background: darkslategray;
+  width: 75px;
+  height: 420px;
+  box-shadow: 2px 2px 7px black;
+  border-radius: 50px;
+  box-sizing: initial;
+
+  position: fixed;
+  top: 25%;
+  bottom: 25%;
+  left: 20px;
+}
+
+.navigation ul{
+  width: 100%;
+  height: 100%;
+  padding: 7.5px 7.5px ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navigation ul li{
+  color: #000;
+  width: 100%;
+  list-style: none;
+  align-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.navigation ul li a{
+  width: 100%;
+  color: #000;
+  display: flex;
+  cursor: pointer;
+}
+
+.navigation ul li a .icon{
+  width: 100%;
+  min-width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a .icon i{
+  padding-top: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+.navigation ul li a:active{
+  background: white;
+  border-radius: 50px;
+}
+.navigation ul li a .icon i:active{
+  color: #000;
+}
+
+/* ---  MAIN PART --- */
+
+.main-part{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-components{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-images{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+.main-images .main-background{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: darkslategrey;
+  border-radius: 500px;
+
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  right: 13.5%;
+}
+
+.main-images .main-logo{
+
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background: url("images/main-img.png") no-repeat;
+  background-size: cover;
+
+  z-index: 2;
+  position: absolute;
+}
+
+.main-text{
+  width: 800px;
+  height: 400px;
+  color: #000;
+  text-align: center;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  font-size: 30px;
+}
+
+.main-text p{
+  margin-top: 30px;
+}
+
+.main-text a{
+  color: #000;
+  text-decoration: none;
+}
+
+/* ---  ABOUT ME  --- */
+.about-part{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-header{
+  font-size: 35px;
+  font-family: 'Enso', sans-serif;                      
+  line-height: 1.2;
+}
+
+.about-components{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-text{
+  width: 800px;
+  height: 400px;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  font-size: 30px;
+}
+
+.about-text h3{
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.about-text p:not(:first-of-type){
+  margin-top: 20px;
+}
+
+.about-avatar{
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: darkslategray url('images/avatar.jpg') no-repeat center;
+  background-size: cover;
+  border: 2px black solid;
+  border-radius: 450px;
+
+  margin-left: 50px;
+}
+
+/* ---  SKILL PART  --- */
+.skill-part{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill-header{
+  font-size: 35px;
+  font-family: 'Enso', sans-serif;                      
+  line-height: 1.2;
+}
+
+.skill-bar{
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.skill-bar ul{
+  width: 500px; 
+  height: 500px; 
+  display: grid;
+  justify-content: left; 
+  align-items: center;
+}
+
+.progress-container{
+  width: 500px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.progress-value-html {
+  height: 12.5px;
+  background: #E54C21;
+  border-radius: 10px;
+}
+
+.progress-value-css {
+  height: 12.5px;
+  background: #214CE5;
+  border-radius: 10px;
+}
+
+.progress-value-js {
+  height: 12.5px;
+  background: #d4c00d;
+  border-radius: 10px;
+}
+
+.progress-value-php {
+  height: 12.5px;
+  background: #787CB4;
+  border-radius: 10px;
+}
+
+/* ---  PORTFOLIO PART --- */
+.portfolio-part{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio-header{
+  font-size: 35px;
+  font-family: 'Enso', sans-serif;                      
+  line-height: 1.2;
+}
+
+.portfolio-components{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showcase{
+  width: 930px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.showcase .case-first, .case-second, .case-third, .case-four, .case-five, .case-six{
+  width: 300px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkslategray url('https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6598168492a5031d8297431b_659816c4c55a222855e1d70b/scale_1200') no-repeat center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 20px;
+  opacity: 0.9;
+  margin: 5px 5px 5px 5px;
+}
+
+.showcase a{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* ---  SOCIAL PART --- */
+.social-part{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-header{
+  font-size: 35px;
+  font-family: 'Enso', sans-serif;
+  line-height: 1.2;
+}
+
+.social-form{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-form form{
+  width: 400px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  background: darkslategray;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.social-form label{
+  color: white;
+  font-size: 24px;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  margin-top: 10px;
+}
+
+.social-form input{
+  height: auto;
+  width: 300px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px black;
+  cursor: pointer;
+}
+
+.social-form textarea{
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px black;
+  cursor: pointer;
+  resize: none;
+}
+
+button{
+  margin-top: 25px;
+  padding: 20px 75px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 2px 2px 7px black;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  
+}
+/* ---  FOOTER PART --- */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  background-color: darkslategray;
+  line-height: 1.2;
+  font-family: 'Enso', sans-serif;    
+                                                
+}
+
+.footer-text{
+  color: white;
+  font-size: 24px;
+  margin-bottom:10px;
+}
+
+footer ul{
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+  
+  @media (min-width: 500px) {
+    footer ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  /* below is just for demo styling */
+
+  
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+      
+    }
+  }
